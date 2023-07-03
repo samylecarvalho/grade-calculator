@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./reset.css">
+
+        <title>Grade calculator</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1 class="page-title">
+                Grade calculator</h1>
+            <h2 class="page-subtitle">
+                Find out what is your final grade this year</h2>
+            <div>
+                <form class="grades-form">
+                    <label for='gradeOne'>First term:</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder= "Grade"
+                        name="grade"
+                        id="gradeOne"
+                        required
+                        minlength="1" maxlength="4" size="12"
+                    />
+
+                    <label for='gradeTwo'>Second term:</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder= "Grade"
+                        name="grade"
+                        id="gradeTwo"
+                        required
+                        minlength="1" maxlength="4" size="12"
+                    />
+
+                    <label for='gradeThree'>Third term:</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder= "Grade"
+                        name="grade"
+                        id="gradeThree"
+                        required
+                        minlength="1" maxlength="4" size="12"
+                    />
+
+                    <label for='gradeFour'>Fourth term:</label>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder= "Grade"
+                        name="grade"
+                        id="gradeFour"
+                        required
+                        minlength="1" maxlength="4" size="12"
+                    />
+
+                    <button class="form-submit" 
+                        id="submitButton" type="submit">Result</button>
+                </form>
+            </div>              
+            <div class="result-banner">
+                <p id="result">Your final grade is <span id="average"></span></p>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+
+</html>

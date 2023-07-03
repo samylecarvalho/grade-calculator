@@ -1,0 +1,96 @@
+:root {
+  --first-color: #F8D540;
+  --second-color: DimGrey;
+  --third-color: Gainsboro;
+  --fourth-color: rgb(243, 242, 242);
+  --fifth-color: #2AB8E2;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--first-color);
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  color: var(--second-color);
+  margin: 50px auto;
+  width: 360px;
+  height: 600px;
+  background: var(--fourth-color);
+  box-shadow: 5px 5px 5px var(--third-color);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.page-title {
+  background: var(--third-color);
+  color: var(--second-color);
+  padding: 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+}
+
+.page-subtitle {
+  color: var(--second-color);
+  padding: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.grades-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grades-form > label {
+  margin: 5px;
+  color: var(--second-color); 
+}
+
+.form-input {
+  background: #fff;
+  width: 100px;
+  padding: 5px 5px 8px 8px;
+}
+
+.form-input:focus {
+  border: 3px solid var(--first-color);
+  outline: none;
+}
+
+.form-select {
+  width: 180px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.form-submit {
+  display: block;
+  font-weight: 700;
+  margin: 30px auto;
+  text-transform: uppercase;
+  background-color: var(--fifth-color);
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.result-banner {
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
